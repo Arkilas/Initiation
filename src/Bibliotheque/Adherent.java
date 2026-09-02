@@ -6,21 +6,30 @@ import java.util.List;
 public class Adherent{
 
     private String nom;
-    private List<Livre> livresEmpruntes;
+    private List<Media> mediasEmpruntes;
 
     public Adherent(String nom){
         this.nom = nom;
-        this.livresEmpruntes = new ArrayList<Livre>();
+        this.mediasEmpruntes = new ArrayList<Media>();
     }
 
-    public void emprunter(Livre livre){
+    public void emprunter(Media media){
         try{
-            LivreIndisponibleException.verifierDisponibilite(livre);
-            livresEmpruntes.add(livre);
+            MediaIndisponibleException.verifierDisponibilite(media);
+            mediasEmpruntes.add(media);
+            media.setDisponible(false);
         }
-        catch(LivreIndisponibleException exception){
+        catch(MediaIndisponibleException exception){
             System.out.println("Erreur: " + exception.getMessage());
         }   
+    }
+
+    public String getNom(){
+        return nom;
+    } 
+
+    public List<Media> getMediasEmpruntes(){
+        return mediasEmpruntes;
     }
 
 }
