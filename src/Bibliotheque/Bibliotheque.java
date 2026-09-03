@@ -46,9 +46,11 @@ public class Bibliotheque {
 
         System.out.println("");
         System.out.println("affichage de la liste des media empruntes");
+        // normalement le livre audio doit etre toujours disponible
         for(Media media : adherent.getMediasEmpruntes()){
             media.decrire();
         }
+        // apres avoir tester le programme, le livre audio est toujours disponible.
 
         System.out.println("");
         System.out.println("verification de la liste des media");
