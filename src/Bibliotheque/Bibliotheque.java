@@ -16,9 +16,9 @@ public class Bibliotheque {
         listeMedia.add(new DVD("Blade Runner", "Ridley Scott", false));
         listeMedia.add(new LivreAudio("Le Seigneur des Anneaux", "J.R.R.Tolkien"));
         listeMedia.add(new LivreAudio("Azazel", "Asimov"));
-        //listeMedia.add(new Journal("le Monde", "15/12/2025"));
-        //listeMedia.add(new Journal("la Croix", "10/10/2020"));
-        //listeMedia.add(new Journal("l'equipe", "5/06/2015", false));
+        listeMedia.add(new Journal("le Monde", "15/12/2025"));
+        listeMedia.add(new Journal("la Croix", "10/10/2020"));
+        listeMedia.add(new Journal("l'equipe", "5/06/2015", false));
 
         System.out.println("liste des medias");
         for(Media media : listeMedia){
@@ -35,14 +35,14 @@ public class Bibliotheque {
         }
 
         System.out.println("");
-        System.out.print("l'adherent tente d'emprunter 4 medias");
+        System.out.print("l'adherent tente d'emprunter 6 medias");
 
         adherent.emprunter((listeMedia.get(1)));
         adherent.emprunter((listeMedia.get(2)));
         adherent.emprunter((listeMedia.get(3)));
         adherent.emprunter((listeMedia.get(7)));
-        //adherent.emprunter((listeMedia.get(8)));
-        //adherent.emprunter((listeMedia.get(10)));
+        adherent.emprunter((listeMedia.get(8)));
+        adherent.emprunter((listeMedia.get(10)));
 
         System.out.println("");
         System.out.println("affichage de la liste des media empruntes");
