@@ -437,7 +437,7 @@ public class Exercices{
     }
 
 
-    private static String determinationFizzBuzz(int i){
+    /*private static String determinationFizzBuzz(int i){
         //test i divisible par 3 ET 5
         if(i%3 == 0 && i%5 == 0){
             return ("FizzBuzz");
@@ -453,6 +453,6 @@ public class Exercices{
                 return (""+i);
         }
         
-    }
+    }*/
 
 }
