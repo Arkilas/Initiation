@@ -14,6 +14,8 @@ public class Bibliotheque {
         listeMedia.add(new DVD("L'Apocalypse des annimaux", "Frederic Rossif", true));
         listeMedia.add(new Livre("Les androides revent-ils de moutons electriques ?","Philip K. Dick", true));
         listeMedia.add(new DVD("Blade Runner", "Ridley Scott", false));
+        listeMedia.add(new LivreAudio("Le Seigneur des Anneaux", "J.R.R.Tolkien"));
+        listeMedia.add(new LivreAudio("Azazel", "Asimov"));
 
         System.out.println("liste des medias");
         for(Media media : listeMedia){
@@ -32,6 +34,7 @@ public class Bibliotheque {
         adherent.emprunter((listeMedia.get(1)));
         adherent.emprunter((listeMedia.get(2)));
         adherent.emprunter((listeMedia.get(3)));
+        adherent.emprunter((listeMedia.get(7)));
 
         System.out.println("");
         System.out.println("affichage de la liste des media empruntes");
