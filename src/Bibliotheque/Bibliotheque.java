@@ -59,6 +59,9 @@ public class Bibliotheque {
 
         System.out.println("");
 
+        Test.afficheMessageTest();
+        System.out.println();
+
 
     }
     
